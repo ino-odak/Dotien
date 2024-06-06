@@ -97,7 +97,7 @@ const Chat = () => {
             <button onClick={logout} className="px-2 py-1 bg-gray-100 text-gray-900 rounded-lg text-sm font-bold hover:bg-gray-300">Log Out</button>
         </div>
         <div className="flex-1 flex-col overflow-y-auto p-5 space-y-4 bg-gray-800">
-          {messages.map((message) => (
+          {messages && messages.map((message) => (
             <Message key={message.index} index={message.index} content={message.content} />
           ))}
         </div>
