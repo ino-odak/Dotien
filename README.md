@@ -1,4 +1,3 @@
-*Za pokretanje aplikacije potrebno je imati instaliran Docker*
 Aplikacija se sastoji od 3 ključne komponente:
 # ExpressJS REST API 
 ## Uloga
@@ -15,7 +14,7 @@ Aplikacija se sastoji od 3 ključne komponente:
 - POST `/logout` -> Logouta korisnika
 - GET `/get_user` -> Dohvaća podatke o korisniku koji je trenutno ulogiran.
 ## Upute za pokretanje
-*Za pokretanje API ja i baze podataka potrebno je imati instaliran Docker*
+*Za pokretanje API ja i baze podataka potrebno je imati instaliran Docker* <br />
 Budući da API ovisi o bazi podataka ove dvije komponente spojene su u jednu cjelinu.
 API se spaja na OpenAI i HuggingFace API-je pa je potrebno podesiti `OPENAI_API_KEY` i `HF_ACCESS_TOKEN` varijable u .env datoteci:
 ```js
@@ -39,7 +38,7 @@ Kako je REST API ovisan o bazi podataka, baza se pokreće zajedno s REST API-jem
 ## Uloga
 Omogućuje jednostavnu i intuitivnu interakciju s REST API-jem i bazom podataka.  
 ## Upute za pokretanje
-*Za pokretanje web sučelja potrebno je imati instaliran Docker*
+*Za pokretanje web sučelja potrebno je imati instaliran Docker* <br />
 Za pokretanje web sučelja potrebno je se pozicionirati u direktoriju `client` i izvršiti sljedeće naredbe:
 ```shell
 docker build -t client .
